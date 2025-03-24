@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-body : #f5ebe0;
+    --main-elements : #c1121f;
+    --main-shadow : 0 2px 5px rgba(193, 18, 31, 0.3);
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-body);
+}
+header {
+    margin: 0;
+    height: 75px;
+    background-color: var(--main-elements);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+header ul a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s ease;
+}
+header ul a:hover {
+    color: var(--main-body);
+}
+@media screen and (max-width: 768px ) {
+    header nav {
+        margin: 0 10px;
+        display: flex;
+        justify-content: space-between;    
+    }
+    header nav div {
+        margin-right: 50px;
+    }
+    header nav ul li:last-child {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    header ul a {
+        padding: 0 5px;
+        font-size: 15px;
+    }
+}
+/* start about  */
+.about {
+    margin-top: 130px;
+}
+.about .container div {
+    display: flex;
+    justify-content: center;
+}
+.about .container img {
+    max-width: 20%;
+    border-radius: 50%;
+    box-shadow: var(--main-shadow);
+}
+.hey {
+    text-align: center;
+    margin: 35px 0;
+    position: relative;
+}
+.hey::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-elements);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+.content {
+    margin-top: 30px;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+}
+.content p:last-child {
+    margin-top: 15px;
+}
+.links {
+    gap: 30px;
+    margin: 35px 0;
+}
+.links i {
+    color: var(--main-elements);
+    transition: color 0.4s ease , transform 0.4s ease;
+}
+.links i:hover {
+    transform: scale(1.5,1.5);
+    color:#f0333f;
+}
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0 45px;
+    }
+}
+
+.project .container {
+    display: flex;
+    padding: 0 50px;
+    margin: 50px 0;
+}
+.project .container .boxs {
+    background-color: var(--main-body);
+    box-shadow: var(--main-shadow);
+    margin: 10px 15px;
+    padding: 20px;
+}
+.project .boxs div {
+    display: flex;
+        justify-content: center;
+}
+.project .boxs p {
+    color: #777;
+    padding: 0 21px
+}
+.project .boxs h4 {
+    text-align: center;
+}
+.project .container img {
+    width: 100%;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .boxs {
+        width: 100%;
+    }
+    .project .container {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    .project .container img {
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
+.coming {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.coming p {
+    font-size: 35px;
+    font-weight: bold;
+}
+.skills {
+    margin: 135px 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.skills .conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.skills .conteiner i {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: var(--main-elements);
+    transition: transform 0.2s ease , color 0.4s ease;
+}
+.skills .conteiner i:hover {
+    transform: scale(1.2);
+    color: #f0333f;
+}
+.leave {
+    margin: 125px 0;
+    padding: 15px;
+}
+.leave h2 {
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+.leave h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--main-elements);
+}
+.leave p {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+}
+footer {
+    text-align: center;
+    background-color: var(--main-elements);
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer p {
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--main-body);
+}
