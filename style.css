@@ -134,7 +134,13 @@ header ul a:hover {
     box-shadow: var(--main-shadow);
     margin: 10px 15px;
     padding: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
+.project .container .boxs:hover {
+    transform: translateY(-15px);
+}
+
 .project .boxs div {
     display: flex;
         justify-content: center;
