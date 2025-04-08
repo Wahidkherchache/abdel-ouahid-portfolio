@@ -235,3 +235,24 @@ footer p {
     font-size: 13px;
     color: var(--main-body);
 }
+/* تخصيص شريط التمرير */
+    ::-webkit-scrollbar {
+        width: 12px; /* عرض الشريط */
+    }
+    
+    /* مسار الشريط */
+    ::-webkit-scrollbar-track {
+        background: var(--main-body); 
+        border-radius: 20px;
+    }
+    
+    /* مقبض الشريط (اللي يتحرك) */
+    ::-webkit-scrollbar-thumb {
+        background: var(--main-elements); /* لون المقبض */
+        border-radius: 20px;
+    }
+    
+    /* عند تمرير الماوس على الشريط */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* لون المقبض عند التمرير */
+    }
