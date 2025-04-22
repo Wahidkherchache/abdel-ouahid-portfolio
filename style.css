@@ -7,16 +7,19 @@ html {
     scroll-behavior: smooth;
 }
 :root {
-    --main-body : #f5ebe0;
-    --main-elements : #c1121f;
+    --main-body : #ECF0F1;
+    --main-elements : #C0392B;
     --main-shadow : 0 2px 5px rgba(193, 18, 31, 0.3);
 }
+
+
 a {
     text-decoration: none;
 }
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--main-body);
+    color: #2C3E50;
 }
 header {
     margin: 0;
